@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React, { useEffect, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -8,7 +7,7 @@ import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 
-export function NavBar() {
+function NavBar() {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
 
@@ -28,7 +27,7 @@ export function NavBar() {
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   };
-
+  
   return (
     <Navbar expand="lg" className={scrolled ? 'scrolled' : ''}>
       <Container>
@@ -64,9 +63,9 @@ export function NavBar() {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#"><img src={navIcon1} alt="" /></a>
-              <a href="#"><img src={navIcon2} alt="" /></a>
-              <a href="#"><img src={navIcon3} alt="" /></a>
+              <a href="#top"><img src={navIcon1} alt="a" /></a>
+              <a href="#top"><img src={navIcon2} alt="a" /></a>
+              <a href="#top"><img src={navIcon3} alt="a" /></a>
             </div>
             <button
               type="button"
