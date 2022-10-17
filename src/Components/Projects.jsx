@@ -1,8 +1,7 @@
-/* eslint no-use-before-define: 0 */ // --> OFF
+import React from 'react';
 import {
   Col, Row, Tab, Nav, Container,
 } from 'react-bootstrap';
-import React from 'react';
 import ProjectCard from './ProjectCard';
 import colorSharp2 from '../assets/img/color-sharp2.png';
 import projImg1 from '../assets/img/project-img1.png';
