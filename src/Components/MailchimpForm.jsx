@@ -1,3 +1,4 @@
+import React from 'react';
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
 import Newsletter from './Newsletter';
 
@@ -12,7 +13,7 @@ function MailchimpForm() {
         <Newsletter
           status={status}
           message={message}
-          onValidated={(formdata) => subscribe(formData)}
+          onValidated={formData => subscribe(formData)}
         />
       )}
     />

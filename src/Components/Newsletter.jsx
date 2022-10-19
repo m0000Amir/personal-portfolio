@@ -1,7 +1,7 @@
 import { Alert, Col, Row } from 'react-bootstrap';
 import React, { useState, useEffect } from 'react';
 
-function Newsletter({ subscribe, status, message }) {
+function Newsletter({ onValidated, status, message }) {
   const [email, setEmail] = useState('');
 
   const clearFields = () => {
@@ -12,7 +12,7 @@ function Newsletter({ subscribe, status, message }) {
     if (status === 'success') clearFields();
   }, [status]);
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     email
       && email.indexOf('@') > -1

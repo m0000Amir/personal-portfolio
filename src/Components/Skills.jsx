@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { Col, Container, Row } from 'react-bootstrap';
@@ -40,22 +40,22 @@ function Skills() {
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
               <Carousel responsive={responsive} infinite className="skill-slider">
                 <div className="item">
-                  <img src={meter1} alt="Image" />
+                  <img src={meter1} alt="Image1" />
                   <h5> Web Development</h5>
                 </div>
 
                 <div className="item">
-                  <img src={meter2} alt="Image" />
+                  <img src={meter2} alt="Image2" />
                   <h5> Brand Indentity</h5>
                 </div>
 
                 <div className="item">
-                  <img src={meter3} alt="Image" />
+                  <img src={meter3} alt="Image3" />
                   <h5> Logo design </h5>
                 </div>
 
                 <div className="item">
-                  <img src={meter1} alt="Image" />
+                  <img src={meter1} alt="Image4" />
                   <h5> Web Development</h5>
                 </div>
               </Carousel>

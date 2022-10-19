@@ -27,7 +27,6 @@ function NavBar() {
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   };
-  
   return (
     <Navbar expand="lg" className={scrolled ? 'scrolled' : ''}>
       <Container>
@@ -63,9 +62,9 @@ function NavBar() {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#top"><img src={navIcon1} alt="a" /></a>
-              <a href="#top"><img src={navIcon2} alt="a" /></a>
-              <a href="#top"><img src={navIcon3} alt="a" /></a>
+              <a href="https://www.linkedin.com/in/amir-mukhtarov-a23081105/"><img src={navIcon1} alt="a" /></a>
+              <a href="https://www.facebook.com/"><img src={navIcon2} alt="a" /></a>
+              <a href="https://www.instagram.com/m0000amir/"><img src={navIcon3} alt="a" /></a>
             </div>
             <button
               type="button"
